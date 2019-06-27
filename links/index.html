@@ -21,7 +21,10 @@
         <link rel="stylesheet" href="dist/style.css">
 
         <!-- Logo -->
-        <img class="logo" src="img/logo.png" />
+        <a href="https://andcomputers.io/"
+        onclick="gtag('event', 'logo-click', { 'event_category' : 'links', 'event_label' : 'homepage' });">
+            <img class="logo" src="img/logo.png" />
+        </a>
 
         <!-- Featured -->
         <h2>Featured</h2>
@@ -55,6 +58,14 @@
 
         <!-- Channels -->
         <h2>Other Channels</h2>
+
+
+        <div class="channels">
+
+            <a href="https://ogunlabs.com"
+                onclick="gtag('event', 'channels-click', { 'event_category' : 'links', 'event_label' : 'ogun labs' });">Consulting</a>
+        </div>
+
         <div class="channels">
             <a href="https://www.patreon.com/andcomputers"
                 onclick="gtag('event', 'channels-click', { 'event_category' : 'links', 'event_label' : 'blog' });">Patreon</a>
@@ -68,11 +79,6 @@
 
         </div>
 
-        <div class="channels">
-
-            <a href="https://ogunlabs.com"
-                onclick="gtag('event', 'channels-click', { 'event_category' : 'links', 'event_label' : 'ogun labs' });">Consulting</a>
-        </div>
 
     </body>
 </html>
